@@ -1,0 +1,176 @@
+.container {
+    padding: 0 20px
+}
+
+.button-group {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+button {
+    padding: 13px 50px;
+    margin-right:10px;
+    color: white;
+    background-color: #8ed033;
+    border: none;
+    border-radius: 5px;
+}
+
+.container button.active{
+    background-color: #007adf;
+}
+
+.flexbox-container {
+    display: flex;
+    margin: 10px 0;
+    width: 65%;
+    flex-flow: row;
+}
+.column1 {
+    width: 50%;
+    padding-left: 5px;
+    margin-right: 5px;
+
+}
+.column2 {
+    width: 50%;
+    padding-left: 5px;
+}
+.content {
+    display: flex;
+    border: 1px solid #cccccc;
+    margin: 10px 0;
+}
+.image-holder {
+    padding: 5px;
+    height: 150px;
+    width: 220px;
+    overflow: hidden;
+}
+.image-holder image {
+    width: 100%;
+    height: auto;
+}
+.content-holder {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content-holder .street {
+    padding: 25px 0 0 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #007adf;
+    text-overflow: ellipsis;
+}
+
+.content-holder .state {
+    padding: 5px 0 0 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #007adf;
+    text-overflow: ellipsis;
+}
+.content-holder .price {
+    padding: 20px 0 5px 10px;
+    font-size: 2.1em;
+    line-height: 0.8;
+    font-weight: bold;
+}
+.feature-list {
+    padding-left: 10px;
+}
+
+li {
+    float: left;
+    list-style-type: disc;
+    padding-right: 24px;
+}
+
+li:first-child {
+    list-style-type: none;
+}
+.built-year {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: darkgray;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 481px) {
+    .flexbox-container {
+        display: flex;
+        margin: 10px 0;
+        width: 80%;
+        flex-flow: column;
+    }
+
+    .column1 {
+        width: 80%;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+
+    .column2 {
+        width: 80%;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 351px) {
+    .flexbox-container {
+        display: flex;
+        margin: 10px 0;
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .column1 {
+        width: 100%;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+
+    .column2 {
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    li {
+        float: left;
+        list-style-type: none;
+        padding-right: 10px;
+        font-size: 0.7em;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        width: 100%;
+    }
+    .flexbox-container {
+        display: flex;
+        width: 100%;
+        flex-flow: column;
+    }
+    .column1 {
+        width: 100%;
+    }
+
+    .column2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    li {
+        float: left;
+        list-style-type: none;
+        padding-right: 10px;
+        font-size: 0.7em;
+    }
+}
